@@ -4,18 +4,18 @@
 
 **What is API?**
 
-API stands for **Aplication Programming Interface** which defines how two or more software programs interacts and share resources.
-React framework just like other frameworks provides tools to help developers fetch data from APIs.This repository demonstartes how api requests can be handled in react projects.
+API stands for **Application Programming Interface** which defines how two or more software programs interact and share resources.
+React framework just like other frameworks provides tools to help developers fetch data from APIs.This repository demonstrates how API requests can be handled in React projects.
 
 ## How to handle API requests in a react project.
 
-- Create react application poiller plate
+- Create React application boilerplate
 
   ```javascript
-    npx create-recat-app api-requests
+    npx create-react-app api-requests
   ```
 
-  In the src directory import [useState](https://legacy.reactjs.org/docs/hooks-state.html) and [useEffect](https://legacy.reactjs.org/docs/hooks-effect.html) hooks. The useState hook is used to store data from the API requests, while the effect hook is used to control component rendering when there a potential changes to the state inorder to provide uptodate data on the UI.
+  In the src directory import [useState](https://legacy.reactjs.org/docs/hooks-state.html) and [useEffect](https://legacy.reactjs.org/docs/hooks-effect.html) hooks. The useState hook is used to store data from the API requests, while the useEffect hook is used to control component rendering when there a potential changes to the state in order to provide up-to-date data on the UI.
 
   ```javascript
   import { useState, useEffect } from "react";
@@ -23,9 +23,9 @@ React framework just like other frameworks provides tools to help developers fet
 
 - Handle APIs request with either fetch API or Axios.
 
-  In my oppinion axios is the most simple way to implement api requests alteast to me. Feel free to use any of these APIs handling tools you like.
+  In my opinion, Axios is the simplest way to implement API requests at least for me. Feel free to use any of these APIs handling tools you like.
 
-  We are going to use two api endpoints to demonstrate how to implement API requests. [Cat facts API](https://catfact.ninja/fact) as well as [Age prediction API](https://api.agify.io/?name=james).
+  We are going to use two API endpoints to demonstrate how to implement API requests. [Cat facts API](https://catfact.ninja/fact) as well as [Age prediction API](https://api.agify.io/?name=james).
 
   ```javascript
   import axios from "axios";
@@ -90,6 +90,6 @@ React framework just like other frameworks provides tools to help developers fet
   export default App;
   ```
 
-  That all you need to get started. Feel free to clone the repository and use it for your own purposes.
+  That is all you need to get started. Feel free to clone the repository and use it for your own purposes.
 
   If you find any issue or typo, kindly feel free to raise it so we can continue to improve the documentation.
