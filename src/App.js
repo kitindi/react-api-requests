@@ -8,9 +8,12 @@ function App() {
   const [prediction, setPrediction] = useState(null);
 
   const getFact = () => {
+    // fectch api implementation
     // fetch("https://catfact.ninja/fact")
-    // .then((res) => res.json())
-    // .then((data) => setFact(data?.fact));
+    //   .then((res) => res.json())
+    //   .then((data) => setFact(data?.fact));
+
+    // axios api implementation
 
     axios
       .get("https://catfact.ninja/fact")
